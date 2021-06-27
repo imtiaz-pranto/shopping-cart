@@ -1,5 +1,7 @@
 import React from "react";
 
+//Header component with searchbar and responsive item count for cart.
+
 export default function Header(props) {
   return (
     <header className="titlebar row center">

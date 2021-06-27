@@ -1,5 +1,7 @@
 import React from "react";
 
+//Creates a list of products from array.
+
 export default function Product(props) {
   const { product, onAdd } = props;
   return (

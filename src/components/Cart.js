@@ -1,10 +1,12 @@
 import React from "react";
 
+//Cart component processes and calculates the items added by user.
+
 export default function Cart(props) {
   const { cartItems, onAdd, onRemove } = props;
   const itemsPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0);
-  const taxPrice = itemsPrice * 0.05;
-  const discount = itemsPrice > 2000 ? 50 : 0;
+  const taxPrice = itemsPrice * 0.05; //5% tax is added per sale.
+  const discount = itemsPrice > 3000 ? 50 : 0; // Discount will be applied when the sale reaches a fixed amount.
   const totalPrice = itemsPrice + taxPrice + discount;
   return (
     <aside className="block col-1">
@@ -52,7 +54,7 @@ export default function Cart(props) {
                 <strong>Total Price</strong>
               </div>
               <div className="col-1 text-right">
-                <strong>BDT{totalPrice.toFixed(2)}</strong>
+                <strong>BDT {totalPrice.toFixed(2)}</strong>
               </div>
             </div>
             <hr />

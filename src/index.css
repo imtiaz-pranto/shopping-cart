@@ -22,6 +22,7 @@ a {
   display: flex;
   justify-content: space-between;
 }
+
 .row.center {
   align-items: center;
 }
@@ -46,14 +47,35 @@ a {
   width: 32%;
   bottom: 0;
 }
+.footer {
+  position: absolute;
+  height: auto;
+  margin-bottom: 15px;
+  min-width: 63.5%;
+  max-width: inherit;
+  width: auto;
+  bottom: 0;
+  top: 10;
+}
+.footer-row {
+  display: flex;
+}
+.links {
+  text-decoration: none;
+  color: #242323;
+}
+.push {
+  margin-left: auto;
+}
+
 .products {
   background-color: #f5f6f8;
   padding: 0.3rem;
-  padding-bottom: 10;
+  padding-bottom: 20;
   margin: 0.1rem;
   border-radius: 0.1rem;
-  width: 100px;
-  height: 210px;
+  width: 120px;
+  height: 240px;
   box-shadow: 5px 10px 8px #888888;
 }
 .titlebar {
@@ -80,6 +102,11 @@ button {
   background-color: #4795fa;
   width: 100%;
   cursor: pointer;
+}
+button.simple {
+  background-color: ivory;
+  width: 5rem;
+  height: max-content;
 }
 button.add {
   background-color: #40c0f0;
